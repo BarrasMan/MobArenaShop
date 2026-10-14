@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,11 +29,11 @@ final class CajaMisteriosa implements Listener {
     record Premio(String id, ItemStack item, double weight, boolean announce) {
     }
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final List<Premio> prizes = new ArrayList<>();
     private final Map<UUID, CajaMenu> opening = new HashMap<>();
 
-    CajaMisteriosa(MobArenaTienda plugin) {
+    CajaMisteriosa(MobArenaShop plugin) {
         this.plugin = plugin;
     }
 
@@ -51,7 +51,7 @@ final class CajaMisteriosa implements Listener {
                     String rarity = section.getString("rareza");
                     if (rarity != null) {
                         ItemMeta meta = item.getItemMeta();
-                        meta.lore(List.of(MobArenaTienda.colorize(rarity)));
+                        meta.lore(List.of(MobArenaShop.colorize(rarity)));
                         item.setItemMeta(meta);
                     }
                     double weight = section.getDouble("peso", 1);

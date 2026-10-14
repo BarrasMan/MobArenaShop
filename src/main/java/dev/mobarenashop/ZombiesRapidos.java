@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.HashSet;
 import java.util.Locale;
@@ -21,11 +21,11 @@ final class ZombiesRapidos {
 
     private static final long CHECK_TICKS = 10L;
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final NamespacedKey modifierKey;
     private BukkitTask task;
 
-    ZombiesRapidos(MobArenaTienda plugin) {
+    ZombiesRapidos(MobArenaShop plugin) {
         this.plugin = plugin;
         this.modifierKey = new NamespacedKey(plugin, "velocidad-oleada");
     }

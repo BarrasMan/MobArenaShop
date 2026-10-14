@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -34,11 +34,11 @@ final class ContadorMobs {
         }
     }
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final Map<String, State> states = new HashMap<>();
     private BukkitTask task;
 
-    ContadorMobs(MobArenaTienda plugin) {
+    ContadorMobs(MobArenaShop plugin) {
         this.plugin = plugin;
     }
 

@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.lang.reflect.Field;
 import java.util.Set;
@@ -23,7 +23,7 @@ final class ArenaInternals {
     private ArenaInternals() {
     }
 
-    static boolean bringBack(MobArenaTienda plugin, Arena arena, Player player, Location destination) {
+    static boolean bringBack(MobArenaShop plugin, Arena arena, Player player, Location destination) {
         try {
             Set<Player> arenaPlayers = playerSet(arena, "arenaPlayers");
             Set<Player> spectators = playerSet(arena, "specPlayers");

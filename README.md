@@ -1,4 +1,4 @@
-# MobArenaTienda
+# MobArenaShop
 
 **An unofficial addon for [MobArena](https://github.com/garbagemule/MobArena)** that adds an in-arena economy. Players earn gold nuggets for every mob they kill and spend them in a shop during the game. On top of that come power-ups, a mystery box and the option to revive fallen teammates.
 
@@ -32,9 +32,9 @@
 ## Installation
 
 1. Install MobArena and set up your arenas as usual.
-2. Download `MobArenaTienda-1.0.0.jar` and put it in your `plugins` folder.
+2. Download `MobArenaShop-1.0.0.jar` and put it in your `plugins` folder.
 3. Restart the server.
-4. Tweak the files in `plugins/MobArenaTienda/` and run `/ma shop reload`.
+4. Tweak the files in `plugins/MobArenaShop/` and run `/ma shop reload`.
 
 Players open the shop with `/ma shop` (MobArena always allows `/ma` commands inside the arena) or by right clicking with a gold nugget in hand.
 
@@ -42,8 +42,8 @@ Players open the shop with `/ma shop` (MobArena always allows `/ma` commands ins
 
 | Command | Description | Permission |
 |---|---|---|
-| `/ma shop` | Open the arena shop (only while playing) | `mobarenatienda.use` |
-| `/ma shop reload` | Reload every configuration file | `mobarenatienda.admin` |
+| `/ma shop` | Open the arena shop (only while playing) | `mobarenashop.use` |
+| `/ma shop reload` | Reload every configuration file | `mobarenashop.admin` |
 
 `/ma tienda` and `/ma tienda recargar` also work (Spanish aliases).
 
@@ -51,8 +51,8 @@ Players open the shop with `/ma shop` (MobArena always allows `/ma` commands ins
 
 | Permission | Default | Description |
 |---|---|---|
-| `mobarenatienda.use` | everyone | Open the arena shop |
-| `mobarenatienda.admin` | op | Reload the configuration |
+| `mobarenashop.use` | everyone | Open the arena shop |
+| `mobarenashop.admin` | op | Reload the configuration |
 
 ## Configuration
 
@@ -75,8 +75,8 @@ Requires **JDK 25** and **Maven**:
 mvn package
 ```
 
-The plugin jar is created at `target/MobArenaTienda-1.0.0.jar`.
+The plugin jar is created at `target/MobArenaShop-1.0.0.jar`.
 
 ## License
 
-MobArenaTienda is free software, released under the **[GNU General Public License v3.0](LICENSE)**, the same license as MobArena.
+MobArenaShop is free software, released under the **[GNU General Public License v3.0](LICENSE)**, the same license as MobArena.

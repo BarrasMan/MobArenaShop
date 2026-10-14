@@ -1,4 +1,4 @@
-# MobArenaTienda - English messages (used with "language: en" in config.yml)
+# MobArenaShop - English messages (used with "language: en" in config.yml)
 # Texts accept '&' color codes. Words between {braces} are replaced automatically.
 # The names of the shop, the mystery box and the power-ups are in tienda.yml and powerups.yml.
 # If you change the coin item (moneda.material), remember to change "gold nugget(s)" here too.
@@ -9,7 +9,7 @@ mensajes:
   sin-monedas: "&cNot enough gold nuggets. You need &6{missing} &cmore."
   inventario-lleno: "&cYour inventory is full."
   comprado: "&aYou bought &f{item} &afor &6{price} &agold nugget(s)."
-  recargado: "&aMobArenaTienda configuration reloaded."
+  recargado: "&aMobArenaShop configuration reloaded."
   sin-permiso: "&cYou don't have permission to do that."
   revivir-pagado: "&aYou paid to revive &e{player}&a. They will come back when the next wave starts, if you are still alive."
   revivir-aviso: "&e{payer} &apaid to revive you. You will come back when the next wave starts, if they are still alive."

@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +25,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class MobArenaTienda extends JavaPlugin {
+public final class MobArenaShop extends JavaPlugin {
 
     private static final LegacyComponentSerializer LEGACY = LegacyComponentSerializer.legacyAmpersand();
     private static final String DEFAULT_LANGUAGE = "en";
@@ -140,7 +140,7 @@ public final class MobArenaTienda extends JavaPlugin {
     }
 
     void openShop(Player player) {
-        if (!player.hasPermission("mobarenatienda.use")) {
+        if (!player.hasPermission("mobarenashop.use")) {
             player.sendMessage(text("mensajes.sin-permiso"));
             return;
         }

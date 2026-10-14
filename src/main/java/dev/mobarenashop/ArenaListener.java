@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -24,11 +24,11 @@ import org.bukkit.inventory.ItemStack;
 
 final class ArenaListener implements Listener {
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     /** Bosses that just took a lethal hit; MobArena unregisters them before ArenaKillEvent. */
     private final Set<UUID> dyingBosses = new HashSet<>();
 
-    ArenaListener(MobArenaTienda plugin) {
+    ArenaListener(MobArenaShop plugin) {
         this.plugin = plugin;
     }
 

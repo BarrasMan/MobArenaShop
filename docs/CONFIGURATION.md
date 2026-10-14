@@ -1,6 +1,6 @@
-# MobArenaTienda – Configuration guide
+# MobArenaShop – Configuration guide
 
-All files are in `plugins/MobArenaTienda/`. Texts accept `&` color codes. After changing anything, run `/ma shop reload`.
+All files are in `plugins/MobArenaShop/`. Texts accept `&` color codes. After changing anything, run `/ma shop reload`.
 
 The setting names are in Spanish. This guide (and the comments inside each file) explains every one.
 

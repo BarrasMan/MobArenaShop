@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.List;
 import java.util.Map;
@@ -19,12 +19,12 @@ final class RevivirMenu implements MenuClickable {
     private static final int MAX_HEADS = 18;
     private static final int SLOT_BACK = 22;
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final Player player;
     private final Inventory inventory;
     private final Player[] slotTargets = new Player[MAX_HEADS];
 
-    RevivirMenu(MobArenaTienda plugin, Player player) {
+    RevivirMenu(MobArenaShop plugin, Player player) {
         this.plugin = plugin;
         this.player = player;
         this.inventory = Bukkit.createInventory(this, SIZE, plugin.text("gui.revivir-titulo"));

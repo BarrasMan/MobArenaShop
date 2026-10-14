@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.EquipmentSlot;

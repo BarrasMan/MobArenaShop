@@ -1,4 +1,4 @@
-# MobArenaTienda - mensajes en español (se usan con "language: es" en config.yml)
+# MobArenaShop - mensajes en español (se usan con "language: es" en config.yml)
 # Los textos admiten códigos de color con '&'. Las palabras entre {llaves} se sustituyen solas.
 # Los nombres de la tienda, la caja misteriosa y los power-ups están en tienda.yml y powerups.yml.
 
@@ -8,7 +8,7 @@ mensajes:
   sin-monedas: "&cNo tienes suficientes pepitas. Te faltan &6{missing}&c."
   inventario-lleno: "&cNo tienes espacio en el inventario."
   comprado: "&aHas comprado &f{item} &apor &6{price} &apepita(s)."
-  recargado: "&aConfiguración de MobArenaTienda recargada."
+  recargado: "&aConfiguración de MobArenaShop recargada."
   sin-permiso: "&cNo tienes permiso para hacer eso."
   revivir-pagado: "&aHas pagado la resurrección de &e{player}&a. Volverá al empezar la siguiente oleada si sigues vivo."
   revivir-aviso: "&e{payer} &aha pagado tu resurrección. Volverás al empezar la siguiente oleada si sigue vivo."

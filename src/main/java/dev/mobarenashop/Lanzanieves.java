@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,7 +36,7 @@ final class Lanzanieves implements Listener {
 
     private static final String CONFIG = "powerups." + Powerups.LANZANIEVES + ".";
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final NamespacedKey weaponKey;
     private final Map<UUID, Active> active = new HashMap<>();
 
@@ -47,7 +47,7 @@ final class Lanzanieves implements Listener {
         BukkitTask timer;
     }
 
-    Lanzanieves(MobArenaTienda plugin) {
+    Lanzanieves(MobArenaShop plugin) {
         this.plugin = plugin;
         this.weaponKey = new NamespacedKey(plugin, "lanzanieves");
     }

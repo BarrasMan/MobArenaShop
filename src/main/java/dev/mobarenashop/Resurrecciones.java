@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,13 +25,13 @@ import org.bukkit.event.Listener;
  */
 final class Resurrecciones implements Listener {
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     /** Players who died in a match -> arena config name. */
     private final Map<UUID, String> fallen = new HashMap<>();
     /** Fallen player -> player who paid for the revive. */
     private final Map<UUID, UUID> pending = new HashMap<>();
 
-    Resurrecciones(MobArenaTienda plugin) {
+    Resurrecciones(MobArenaShop plugin) {
         this.plugin = plugin;
     }
 

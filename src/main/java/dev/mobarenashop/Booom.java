@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,12 +32,12 @@ final class Booom implements Listener {
     private record Launch(Arena arena, UUID thrower) {
     }
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final NamespacedKey tntKey;
     private final Map<UUID, Launch> launched = new HashMap<>();
     private boolean exploding;
 
-    Booom(MobArenaTienda plugin) {
+    Booom(MobArenaShop plugin) {
         this.plugin = plugin;
         this.tntKey = new NamespacedKey(plugin, "booom");
     }

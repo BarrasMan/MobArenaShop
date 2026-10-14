@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ final class CajaMenu implements MenuClickable {
     private static final int STEPS = 30;
     private static final int[] MARKER_SLOTS = {4, 22};
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final CajaMisteriosa caja;
     private final Player player;
     private final CajaMisteriosa.Premio prize;
@@ -36,7 +36,7 @@ final class CajaMenu implements MenuClickable {
     private boolean done;
     private BukkitTask task;
 
-    CajaMenu(MobArenaTienda plugin, CajaMisteriosa caja, Player player, CajaMisteriosa.Premio prize) {
+    CajaMenu(MobArenaShop plugin, CajaMisteriosa caja, Player player, CajaMisteriosa.Premio prize) {
         this.plugin = plugin;
         this.caja = caja;
         this.player = player;

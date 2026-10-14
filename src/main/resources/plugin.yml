@@ -1,13 +1,13 @@
-name: MobArenaTienda
+name: MobArenaShop
 version: "1.0.0"
-main: dev.mobarenatienda.MobArenaTienda
+main: dev.mobarenashop.MobArenaShop
 api-version: "1.21"
 description: Unofficial MobArena addon - coins for every mob, an in-arena shop (/ma shop), power-ups, a mystery box and reviving teammates
 depend: [MobArena]
 permissions:
-  mobarenatienda.use:
+  mobarenashop.use:
     description: Open the arena shop
     default: true
-  mobarenatienda.admin:
+  mobarenashop.admin:
     description: Reload the configuration (/ma shop reload)
     default: op

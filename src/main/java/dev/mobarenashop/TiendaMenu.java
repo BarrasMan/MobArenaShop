@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,12 +18,12 @@ import org.bukkit.inventory.meta.ItemMeta;
 /** The arena shop menu. One instance per open menu. */
 final class TiendaMenu implements MenuClickable {
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final Player player;
     private final Tienda tienda;
     private final Inventory inventory;
 
-    TiendaMenu(MobArenaTienda plugin, Player player) {
+    TiendaMenu(MobArenaShop plugin, Player player) {
         this.plugin = plugin;
         this.player = player;
         this.tienda = plugin.tienda();

@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import org.bukkit.inventory.InventoryHolder;
 

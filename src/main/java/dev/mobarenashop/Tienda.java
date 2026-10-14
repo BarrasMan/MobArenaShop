@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -21,7 +21,7 @@ record Tienda(int rows, int infoSlot, int reviveSlot, int boxSlot, Material fill
     record Articulo(String id, ItemStack item, int price) {
     }
 
-    static Tienda load(MobArenaTienda plugin) {
+    static Tienda load(MobArenaShop plugin) {
         ConfigurationSection config = plugin.getConfig().getConfigurationSection("tienda");
         if (config == null) {
             config = plugin.getConfig().createSection("tienda");
@@ -116,7 +116,7 @@ record Tienda(int rows, int infoSlot, int reviveSlot, int boxSlot, Material fill
 
         String name = section.getString("nombre");
         if (name != null) {
-            meta.displayName(MobArenaTienda.colorize(name));
+            meta.displayName(MobArenaShop.colorize(name));
         }
         item.setItemMeta(meta);
         return item;

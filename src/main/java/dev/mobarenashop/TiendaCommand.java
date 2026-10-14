@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.Arrays;
 
@@ -13,19 +13,19 @@ import org.bukkit.entity.Player;
         pattern = "shop|tienda",
         usage = "/ma shop",
         desc = "open the arena shop",
-        permission = "mobarenatienda.use")
+        permission = "mobarenashop.use")
 final class TiendaCommand implements Command {
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
 
-    TiendaCommand(MobArenaTienda plugin) {
+    TiendaCommand(MobArenaShop plugin) {
         this.plugin = plugin;
     }
 
     @Override
     public boolean execute(ArenaMaster am, CommandSender sender, String... args) {
         if (Arrays.stream(args).anyMatch(arg -> arg.equalsIgnoreCase("recargar") || arg.equalsIgnoreCase("reload"))) {
-            if (!sender.hasPermission("mobarenatienda.admin")) {
+            if (!sender.hasPermission("mobarenashop.admin")) {
                 sender.sendMessage(plugin.text("mensajes.sin-permiso"));
                 return true;
             }

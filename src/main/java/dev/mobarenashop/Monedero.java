@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

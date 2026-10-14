@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +24,7 @@ final class Velocidad implements Listener {
 
     private static final String CONFIG = "powerups." + Powerups.VELOCIDAD + ".";
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final Map<UUID, Active> active = new HashMap<>();
 
     private static final class Active {
@@ -33,7 +33,7 @@ final class Velocidad implements Listener {
         BukkitTask timer;
     }
 
-    Velocidad(MobArenaTienda plugin) {
+    Velocidad(MobArenaShop plugin) {
         this.plugin = plugin;
     }
 

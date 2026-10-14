@@ -1,4 +1,4 @@
-package dev.mobarenatienda;
+package dev.mobarenashop;
 
 import java.util.List;
 import java.util.UUID;
@@ -37,14 +37,14 @@ final class Powerups implements Listener {
     static final String VELOCIDAD = "velocidad";
     private static final List<String> TYPES = List.of(LANZANIEVES, VIDA, BOOOM, VELOCIDAD);
 
-    private final MobArenaTienda plugin;
+    private final MobArenaShop plugin;
     private final NamespacedKey powerupKey;
     private final NamespacedKey uniqueKey;
     private final Lanzanieves lanzanieves;
     private final Booom booom;
     private final Velocidad velocidad;
 
-    Powerups(MobArenaTienda plugin) {
+    Powerups(MobArenaShop plugin) {
         this.plugin = plugin;
         this.powerupKey = new NamespacedKey(plugin, "powerup");
         this.uniqueKey = new NamespacedKey(plugin, "powerup-id");

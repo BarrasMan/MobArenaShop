@@ -1,0 +1,68 @@
+# MobArenaTienda - mensajes en español (se usan con "language: es" en config.yml)
+# Los textos admiten códigos de color con '&'. Las palabras entre {llaves} se sustituyen solas.
+# Los nombres de la tienda, la caja misteriosa y los power-ups están en tienda.yml y powerups.yml.
+
+mensajes:
+  moneda-ganada: "&6+{amount} &epepita(s) de oro &7(tienes {total})"
+  solo-en-partida: "&cSolo puedes usar la tienda mientras juegas en la arena."
+  sin-monedas: "&cNo tienes suficientes pepitas. Te faltan &6{missing}&c."
+  inventario-lleno: "&cNo tienes espacio en el inventario."
+  comprado: "&aHas comprado &f{item} &apor &6{price} &apepita(s)."
+  recargado: "&aConfiguración de MobArenaTienda recargada."
+  sin-permiso: "&cNo tienes permiso para hacer eso."
+  revivir-pagado: "&aHas pagado la resurrección de &e{player}&a. Volverá al empezar la siguiente oleada si sigues vivo."
+  revivir-aviso: "&e{payer} &aha pagado tu resurrección. Volverás al empezar la siguiente oleada si sigue vivo."
+  revivir-ya-pagado: "&cYa hay alguien que ha pagado la resurrección de &e{player}&c."
+  revivir-no-disponible: "&e{player} &cya no puede ser revivido."
+  revivir-vuelve: "&a¡Has vuelto a la partida gracias a &e{payer}&a!"
+  revivir-hecho: "&e{player} &aha vuelto a la partida gracias a &e{payer}&a."
+  revivir-fallido: "&e{payer} &cno sobrevivió a la oleada: la resurrección de &e{player} &cse ha perdido."
+  revivir-error: "&cNo se pudo devolver a &e{player} &ca la partida. Avisa a un administrador."
+  lanzanieves-activado: "&b&l¡LANZANIEVES! &7Click derecho con la azada durante &f{seconds}s&7."
+  lanzanieves-ampliado: "&bLanzanieves recargado: &f{seconds}s&b."
+  lanzanieves-fin: "&7Se acabó el lanzanieves."
+  powerup-sin-espacio: "&cHaz hueco en el inventario para coger el power-up."
+  caja-premio: "&d¡Caja misteriosa! &7Te ha tocado: &f{item}"
+  caja-anuncio: "&6&l¡LEGENDARIO! &e{player} &7ha sacado &f{item} &7de la caja misteriosa."
+  caja-perdida: "&cYa no estás en la partida: el premio de la caja se ha perdido."
+  powerup-vida: "&c&l¡VIDA! &7Te has curado por completo."
+  powerup-booom: "&4&l¡BOOOM! &7TNT lanzada..."
+  powerup-booom-explosion: "&4&l¡BOOOM! &e{player} &7ha arrasado la oleada (&f{count} &7mobs)."
+  powerup-velocidad: "&e&l¡VELOCIDAD x2! &7Durante &f{seconds}s&7."
+  velocidad-fin: "&7Se acabó la velocidad x2."
+
+gui:
+  # Contador de mobs (barra de arriba). Variables: {wave} oleada, {remaining} faltan,
+  # {killed} matados, {total} total.
+  contador-mobs: "&cOleada {wave} &8| &fFaltan &c&l{remaining} &fmobs &7({killed}/{total} matados)"
+  contador-mobs-despejada: "&aOleada {wave} despejada &7- preparaos para la siguiente..."
+  precio: "&7Precio: &6{price} pepita(s)"
+  puedes-comprar: "&aClick para comprar"
+  te-faltan: "&cTe faltan {missing} pepita(s)"
+  info-nombre: "&6Tus pepitas: &e{total}"
+  info-lore: "&7Consigue 1 pepita por cada mob que mates"
+  revivir-nombre: "&d&lRevivir compañeros"
+  revivir-lore:
+    - "&7Precio: &6{price} pepitas"
+    - "&7El compañero vuelve al empezar la"
+    - "&7siguiente oleada si tú sigues vivo."
+  revivir-caidos: "&e{count} compañero(s) caído(s) &7- click para elegir"
+  revivir-sin-caidos: "&8No hay compañeros caídos"
+  revivir-titulo: "&5Revivir compañeros"
+  revivir-jugador: "&e{player}"
+  revivir-jugador-lore:
+    - "&7Precio: &6{price} pepitas"
+    - "&7Volverá al empezar la siguiente"
+    - "&7oleada si tú sigues vivo."
+    - ""
+    - "&aClick para pagar"
+  revivir-jugador-pagado:
+    - "&aResurrección ya pagada"
+    - "&7Volverá al empezar la siguiente oleada."
+  volver: "&eVolver a la tienda"
+  lanzanieves-arma: "&b&lLanzanieves"
+  lanzanieves-arma-lore:
+    - "&7Click derecho para disparar"
+    - "&7bolas de nieve ilimitadas."
+  lanzanieves-barra: "&bLanzanieves &f{seconds}s"
+  velocidad-barra: "&eVelocidad x2 &f{seconds}s"

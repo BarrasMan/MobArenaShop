@@ -1,0 +1,50 @@
+# MobArenaTienda - power-ups
+# Texts accept '&' color codes.
+
+# Power-ups: when a mob dies it may drop a glowing item that activates when picked up.
+# When one drops, it is picked at random among the enabled ones; 'peso' (weight) is how
+# likely each one is compared to the others (with all of them at 1, each one is 25%).
+powerups:
+  # Chance (in %) that a mob drops a power-up when it dies.
+  probabilidad: 50
+  # Seconds the power-up stays on the ground before disappearing.
+  segundos-en-suelo: 15
+
+  # Enchanted snowball -> a hoe that shoots unlimited snowballs.
+  lanzanieves:        # snowball launcher
+    activado: true
+    peso: 1
+    nombre: "&b&lPower-up: Snowball Launcher"
+    # Seconds it lasts (picking up another one while active resets it to the max).
+    duracion: 30
+    # Damage of each snowball (2 = 1 heart). Only hurts the arena mobs.
+    danio: 5
+    # Ticks between shots (20 ticks = 1 second).
+    cadencia-ticks: 4
+    velocidad: 1.8
+    material-arma: DIAMOND_HOE
+
+  # Healing potion -> restores all your health instantly.
+  vida:               # health
+    activado: true
+    peso: 1
+    nombre: "&c&lPower-up: Health"
+
+  # TNT -> thrown where you look; when it explodes it kills every mob of the wave.
+  # It doesn't break blocks or hurt players. The kills count as the player's
+  # (they give coins) but don't drop more power-ups.
+  booom:
+    activado: true
+    peso: 1
+    nombre: "&4&lPower-up: BOOOM"
+    # Seconds until the thrown TNT explodes.
+    mecha: 2
+    # If true, the explosion also kills bosses.
+    matar-jefes: false
+
+  # Boots -> movement speed x2 (Speed V).
+  velocidad:          # speed
+    activado: true
+    peso: 1
+    nombre: "&e&lPower-up: Speed"
+    duracion: 15

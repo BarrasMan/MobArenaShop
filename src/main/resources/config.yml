@@ -1,0 +1,42 @@
+# MobArenaTienda - coins and shop for MobArena
+# The configuration is split into these files:
+#   config.yml            -> general options (this file)
+#   tienda.yml            -> shop articles, mystery box and reviving teammates
+#   powerups.yml          -> power-ups dropped by mobs
+#   messages_<lang>.yml   -> every message and menu text
+# Commands: /ma shop          -> open the shop (only while playing)
+#           /ma shop reload   -> reload every file (permission mobarenatienda.admin)
+# The shop also opens by right clicking with the coin in hand.
+# The setting names are in Spanish; every one is explained in its comment.
+
+# Language of the messages: en (English) or es (Spanish).
+# Any other code (fr, de...) creates messages_<code>.yml as a copy of the English file.
+language: en
+
+moneda:               # coin
+  material: GOLD_NUGGET
+  # Coins for each mob the player kills.
+  por-mob: 1
+  # Coins for killing a MobArena boss.
+  por-jefe: 10
+
+# Right click with the coin in hand opens the shop.
+abrir-con-moneda: true
+
+# Mob counter: a boss bar at the top with the mobs left in the current wave
+# (shown to the players and spectators of the arena). Its text is in the messages file.
+contador-mobs:
+  activado: true      # enabled
+
+# Faster zombies as the game goes on: every 'cada-oleadas' waves, the zombies
+# that spawn run 'porcentaje' percent faster (wave 5: +7%, wave 10: +14%...).
+zombies-rapidos:
+  activado: true      # enabled
+  cada-oleadas: 5     # every N waves
+  porcentaje: 7       # percent faster each time
+  # Mob types it applies to (Minecraft names).
+  tipos:
+    - ZOMBIE
+    - HUSK
+    - DROWNED
+    - ZOMBIE_VILLAGER

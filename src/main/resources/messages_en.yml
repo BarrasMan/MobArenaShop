@@ -1,0 +1,68 @@
+# MobArenaTienda - English messages (used with "language: en" in config.yml)
+# Texts accept '&' color codes. Words between {braces} are replaced automatically.
+# The names of the shop, the mystery box and the power-ups are in tienda.yml and powerups.yml.
+# If you change the coin item (moneda.material), remember to change "gold nugget(s)" here too.
+
+mensajes:
+  moneda-ganada: "&6+{amount} &egold nugget(s) &7(you have {total})"
+  solo-en-partida: "&cYou can only use the shop while playing in the arena."
+  sin-monedas: "&cNot enough gold nuggets. You need &6{missing} &cmore."
+  inventario-lleno: "&cYour inventory is full."
+  comprado: "&aYou bought &f{item} &afor &6{price} &agold nugget(s)."
+  recargado: "&aMobArenaTienda configuration reloaded."
+  sin-permiso: "&cYou don't have permission to do that."
+  revivir-pagado: "&aYou paid to revive &e{player}&a. They will come back when the next wave starts, if you are still alive."
+  revivir-aviso: "&e{payer} &apaid to revive you. You will come back when the next wave starts, if they are still alive."
+  revivir-ya-pagado: "&cSomeone has already paid to revive &e{player}&c."
+  revivir-no-disponible: "&e{player} &ccan no longer be revived."
+  revivir-vuelve: "&aYou are back in the game thanks to &e{payer}&a!"
+  revivir-hecho: "&e{player} &ais back in the game thanks to &e{payer}&a."
+  revivir-fallido: "&e{payer} &cdid not survive the wave: the revive of &e{player} &cwas lost."
+  revivir-error: "&cCould not bring &e{player} &cback into the game. Please tell an admin."
+  lanzanieves-activado: "&b&lSNOWBALL LAUNCHER! &7Right click with the hoe for &f{seconds}s&7."
+  lanzanieves-ampliado: "&bSnowball launcher recharged: &f{seconds}s&b."
+  lanzanieves-fin: "&7The snowball launcher ran out."
+  powerup-sin-espacio: "&cMake room in your inventory to pick up the power-up."
+  caja-premio: "&dMystery box! &7You got: &f{item}"
+  caja-anuncio: "&6&lLEGENDARY! &e{player} &7got &f{item} &7from the mystery box."
+  caja-perdida: "&cYou are no longer in the game: the mystery box prize was lost."
+  powerup-vida: "&c&lHEALTH! &7You are fully healed."
+  powerup-booom: "&4&lBOOOM! &7TNT thrown..."
+  powerup-booom-explosion: "&4&lBOOOM! &e{player} &7wiped out the wave (&f{count} &7mobs)."
+  powerup-velocidad: "&e&lSPEED x2! &7For &f{seconds}s&7."
+  velocidad-fin: "&7Speed x2 ran out."
+
+gui:
+  # Mob counter (boss bar at the top). Placeholders: {wave}, {remaining}, {killed}, {total}.
+  contador-mobs: "&cWave {wave} &8| &c&l{remaining} &fmobs left &7({killed}/{total} killed)"
+  contador-mobs-despejada: "&aWave {wave} cleared &7- get ready for the next one..."
+  precio: "&7Price: &6{price} gold nugget(s)"
+  puedes-comprar: "&aClick to buy"
+  te-faltan: "&cYou need {missing} more gold nugget(s)"
+  info-nombre: "&6Your gold nuggets: &e{total}"
+  info-lore: "&7Get 1 gold nugget for every mob you kill"
+  revivir-nombre: "&d&lRevive teammates"
+  revivir-lore:
+    - "&7Price: &6{price} gold nuggets"
+    - "&7Your teammate comes back when the"
+    - "&7next wave starts, if you are still alive."
+  revivir-caidos: "&e{count} fallen teammate(s) &7- click to choose"
+  revivir-sin-caidos: "&8No fallen teammates"
+  revivir-titulo: "&5Revive teammates"
+  revivir-jugador: "&e{player}"
+  revivir-jugador-lore:
+    - "&7Price: &6{price} gold nuggets"
+    - "&7They come back when the next"
+    - "&7wave starts, if you are still alive."
+    - ""
+    - "&aClick to pay"
+  revivir-jugador-pagado:
+    - "&aRevive already paid"
+    - "&7They come back when the next wave starts."
+  volver: "&eBack to the shop"
+  lanzanieves-arma: "&b&lSnowball Launcher"
+  lanzanieves-arma-lore:
+    - "&7Right click to shoot"
+    - "&7unlimited snowballs."
+  lanzanieves-barra: "&bSnowball launcher &f{seconds}s"
+  velocidad-barra: "&eSpeed x2 &f{seconds}s"
